@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--Off-white);
+  color: var(--Off-black);
+  font-weight: 400;
+}
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+#main-container {
+  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+  margin-bottom: 150px;
+  height: 500px;
+  border-radius: 20px;
+  border-bottom-right-radius: 150px;
+  background-color: var(--White);
+  display: grid;
+}
+form {
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: var(--Smokey-grey);
+  font-weight: 600;
+  margin-left: 40px;
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  height: 130px;
+  max-width: 76%;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+input {
+  font-size: 1.5rem;
+  color: var(--Off-black);
+  font-weight: 600;
+  max-width: 100px;
+  margin-top: 8px;
+  height: 35px;
+  padding: 15px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+}
+input:focus {
+  outline: 1px solid var(--Purple);
+}
+button {
+  background-color: var(--Purple);
+  height: 85px;
+  width: 220px;
+  border-radius: 100%;
+  border: none;
+ margin-top: 85px;
+ transition: 300ms;
+}
+
+::placeholder {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+span {
+  color: var(--Purple)
+}
+
+#result {
+  font-style: italic;
+  font-size: 3.5rem;
+  line-height: 10px;
+  margin-left: 40px;
+}
+
+p {
+  font-size: 10px;
+  letter-spacing: 0;
+  font-style: italic;
+  font-weight: 100;
+  color: var(--Light-red);
+}
+
+button:hover {
+  background-color: var(--Off-black);
+}
+
+
+@media screen and (max-width: 412px) {
+  input {
+    height: 20px;
+    width: 50px;
+    
+  }
+  form {
+    height: 150px;
+    max-width: 70%;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  button {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 15%;
+    right: 65%;
+  }
+} 
+ 
