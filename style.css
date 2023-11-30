@@ -5,6 +5,7 @@ body {
   background-color: var(--Off-white);
   color: var(--Off-black);
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 :root {
